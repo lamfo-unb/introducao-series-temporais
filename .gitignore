@@ -44,3 +44,7 @@ vignettes/*.pdf
 *.txt
 apresentacoes/*
 texto/*
+
+# outros
+apresentacao/*
+!apresentacao/*.zip
