@@ -126,3 +126,11 @@ row.names(erros) <- c('Holt', 'HW-Aditivo', 'HW-Multiplicativo')
 
 knitr::kable(erros, digits = 3)
 
+
+# Exporrando tabelas com erros dos modelos
+erros <- data.frame(
+  modelo = row.names(erros),
+  erros,
+  row.names = NULL, stringsAsFactors = FALSE
+)
+write.csv2(erros, 'data/erros-modelos.csv', row.names = FALSE)
